@@ -67,8 +67,8 @@ IAPTool.delegate = self;
 ```Objective-C
 //向苹果询问哪些商品能够购买
 [IAPTool requestProductsWithProductArray:@[@"productID1",
-                                               @"productID2",
-                                               @"productID3"]];
+                                           @"productID2",
+                                           @"productID3"]];
 //请求购买商品
 [[YQInAppPurchaseTool defaultTool]buyProduct:product.productIdentifier];  
 //请求恢复商品(永久性商品)(也可直接再次购买，系统会提示不用扣费)
