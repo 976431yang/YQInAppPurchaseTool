@@ -1,22 +1,22 @@
-#YQInAppPurchaseTool
-####微博：畸形滴小男孩
+# YQInAppPurchaseTool
+#### 微博：畸形滴小男孩
 
-###iOS苹果内购集成工具
+### iOS苹果内购集成工具
 
 
-####使用方法：
-#####1把文件拖到XCodeg工程中，并开启工程的IAP：
+#### 使用方法：
+##### 1把文件拖到XCodeg工程中，并开启工程的IAP：
  ![image](https://github.com/976431yang/YQInAppPurchaseTool/blob/master/DEMO/ScreenShot/ScrrenShot01.png)
 
-#####2引入头文件
+##### 2引入头文件
 ```Objective-C
 #import "YQInAppPurchaseTool.h"
 ```
-#####3添加代理
+##### 3添加代理
 ```Objective-C
 <YQInAppPurchaseToolDelegate>
 ```
-#####4遵循、实现代理
+##### 4遵循、实现代理
 ```Objective-C
 //-----------获取单例
 YQInAppPurchaseTool *IAPTool = [YQInAppPurchaseTool defaultTool];
@@ -63,7 +63,7 @@ IAPTool.delegate = self;
     NSLog(@"SysWrong");
 }
 ```
-#####5使用
+##### 5使用
 ```Objective-C
 //向苹果询问哪些商品能够购买
 [IAPTool requestProductsWithProductArray:@[@"productID1",
@@ -75,7 +75,7 @@ IAPTool.delegate = self;
 [[YQInAppPurchaseTool defaultTool]restorePurchase];
 ```
 
-#####6购买流程
+##### 6购买流程
 1.向苹果询问哪些商品可以购买<br> 
 2.请求购买商品<br> 
 3.代理会自动响应购买中的各个状态<br> 
