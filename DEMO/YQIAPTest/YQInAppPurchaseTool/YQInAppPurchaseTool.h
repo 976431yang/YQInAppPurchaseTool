@@ -87,7 +87,7 @@ typedef void(^DicBlock)(BOOL successed,NSDictionary *result);
 /**
  *  代理
  */
-@property(nonatomic,strong) id <YQInAppPurchaseToolDelegate> delegate;
+@property(nonatomic,weak) id <YQInAppPurchaseToolDelegate> delegate;
 
 /**
  *  购买完后是否在iOS端向服务器验证一次,默认为YES
